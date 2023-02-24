@@ -17,7 +17,7 @@
     <!--! <><><Emd> Tailwind External CSS Link </Emd>  -->
 </head>
 
-<body>
+<body >
     <!-- Header Section HTML5 Structure Start  -->
     <header>
 
@@ -25,17 +25,20 @@
     <!-- Header Section HTML5 Structure END -->
 
     <!-- Main Section HTML5 Structure Start  -->
-    <main class="bg-gradient-to-r from-indigo-500 bg-no-repeat">
-        <img src="img/banner.png" alt="Banner Image" class="bg-no-repeat opacity-50 relative">
+    <main class="bg-gradient-to-r from-indigo-500 ">
+        <img src="img/banner.png" alt="Banner Image" class="bg-no-repeat opacity-50 bg-no-repeat relative">
 
-        <div class="flex items-center justify-center"> 
+        <div class="flex items-center justify-center">
             <div class="card card-compact w-2/5 h-3/5 bg-base-100 shadow-xl  absolute top-[200px]">
                 <figure><img src="/img/banner.png" alt="Shoes" /></figure>
                 <div class="card-body">
-                    <h2 class="card-title text-5xl text-rose-600 font-black italic">`Important Qouit!`</h2>
-                    <p id="display-qouit" class="text-2xl text-rose-500 pl-5 py-5">Your best teacher is your last mistake.</p>
+                    <h2 class="card-title text-5xl text-rose-600 font-black italic">`Motivational Qouit!`</h2>
+                    <p id="display-qouit" class="text-2xl text-rose-500 pl-5 py-5">Your best teacher is your last
+                        mistake.</p>
                     <div class="card-actions justify-center">
-                        <button id="qouit-genarator" class="text-lg font-semibold btn border-none bg-gradient-to-r from-indigo-500 hover:from-slate-500 hover:to-indigo-500">Qouit Genarator</button>
+                        <button id="qouit-genarator"
+                            class="text-lg font-semibold btn border-none bg-gradient-to-r from-indigo-500 hover:from-slate-500 hover:to-indigo-500">Qouit
+                            Genarator</button>
                     </div>
                 </div>
             </div>
@@ -45,11 +48,21 @@
 
 
     <!-- Footer Section HTML5 Structure Start  -->
-    <footer>
+    <footer class="text-center absolute top-[900px] left-[670px]">
+        <p class="text-center text-stone-50  text-3xl">
+            Copyright ©
+            <script>
+                document.write(new Date().getFullYear())
+            </script>
+            Mostafizru Rahman Nayem
+        </p>
 
     </footer>
     <!-- Footer Section HTML5 Structure END -->
-    
+
+
+    <!-- JavaScript File Link  -->
+    <script src="./js/qouit.js"></script>
 </body>
 
 </html>
