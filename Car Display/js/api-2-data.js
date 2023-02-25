@@ -84,7 +84,7 @@ const data = [
   // Car 5  End
 
   // Car 6  Srart
-  displayCarInfo('cardThereCarImage','cardThereCarName','cardThereCarDitels','cardThereCarPrice',5)
+  displayCarInfo('cardSixCarImage','cardSixCarName','cardSixCarDitels','cardSixCarPrice',5)
   // Car 6  End
 
 
