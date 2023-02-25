@@ -22,8 +22,8 @@ const person = {
       age: 33,
       isMale: false,
       address: {
-        street: "13/A St Lucia",
-        house: 11,
+        street: "454/A St Lucia",
+        house: 25,
       },
     },
     {
@@ -41,7 +41,24 @@ const person = {
   ]
 };
 
+// displayInfo function start 
+
+displayInfo = (cardName,cardAge,cardStreet,indexNumber) => {
+  document.getElementById(cardName).innerText = person.result[indexNumber].name.common;
+  document.getElementById(cardAge).innerText = person.result[indexNumber].age;
+  let h = document.getElementById(cardStreet).innerText = person.result[indexNumber].address.street;
+  console.log(h);
+}
+// displayInfo function end
+
 // card one  start
-let h= document.getElementById('cardOneName').innerText = person.result[0].name.common;
-console.log(h);
+displayInfo('cardOneName','cardOneAge','cardOneStreet',0)
 // card one  end
+
+//card Tow   start
+displayInfo('cardTowneName','cardTowAge','cardTowStreet',1)
+//card Tow   end
+
+// card There start
+displayInfo('cardThereName','cardThereAge','cardThereStreet',2)
+// card There  end
