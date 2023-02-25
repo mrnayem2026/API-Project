@@ -76,7 +76,7 @@ const data = [
   // Car 3  End
 
   // Car 4  Srart
-  displayCarInfo('cardThereCarImage','cardThereCarName','cardThereCarDitels','cardThereCarPrice',3)
+  displayCarInfo('cardFoureCarImage','cardFoureCarName','cardFoureCarDitels','cardFoureCarPrice',3)
   // Car 4  End
 
   // Car 5  Srart
