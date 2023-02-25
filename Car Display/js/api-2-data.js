@@ -80,7 +80,7 @@ const data = [
   // Car 4  End
 
   // Car 5  Srart
-  displayCarInfo('cardThereCarImage','cardThereCarName','cardThereCarDitels','cardThereCarPrice',4)
+  displayCarInfo('cardFiveCarImage','cardFiveCarName','cardFiveCarDitels','cardFiveCarPrice',4)
   // Car 5  End
 
   // Car 6  Srart
