@@ -29,7 +29,7 @@
             <div class="flex">
                 <label for="inputFilde" class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">Your
                     Email</label>
-                <button id="dropdown-button" data-dropdown-toggle="dropdown"
+                <button id="categories" data-dropdown-toggle="dropdown"
                     class="flex-shrink-0 z-10 inline-flex items-center py-2.5 px-4 text-xl font-medium text-center text-gray-900 bg-gray-100 border border-gray-300 rounded-l-lg hover:bg-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 dark:bg-gray-700 dark:hover:bg-gray-600 dark:focus:ring-gray-700 dark:text-white dark:border-gray-600"
                     type="button">All categories <svg aria-hidden="true" class="w-4 h-4 ml-1" fill="currentColor"
                         viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
@@ -38,8 +38,8 @@
                             clip-rule="evenodd"></path>
                     </svg></button>
                 <div id="dropdown"
-                    class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
-                    <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdown-button">
+                    class="z-10 hidden  bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
+                    <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="categories">
                         <li>
                             <button type="button"
                                 class="inline-flex  text-xl  w-full px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Region</button>
@@ -57,7 +57,7 @@
                     </ul>
                 </div>
                 <div class="relative w-full">
-                    <input type="search" id="inputFilde"
+                    <input type="search" id="inputFilde" value="Asia"
                         class="block placeholder:text-2xl p-3  w-full z-20 text-2xl text-gray-900 bg-gray-50 rounded-r-lg border-l-gray-50 border-l-2 border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-l-gray-700  dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:border-blue-500"
                         placeholder="Find using Region, Capital city, Language..." required>
                     <button id="submitBtn" type="submit"
@@ -75,9 +75,37 @@
         <!-- search fild HTML5 Structure End -->
 
         <!-- ** Card by display country HTML5 Structure Start -->
-        <section>
+        <section id="countryContainer" class="py-5 grid grid-cols-1 sm:grid-cols-2 sm:gap-2 md:grid-cols-3 ">
 
+            <!-- <div
+                class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                <a href="#">
+                    <img class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
+                </a>
+                <div class="p-5">
+                    <a href="#">
+                        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy
+                            technology acquisitions 2021</h5>
+                    </a>
+                    <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise
+                        technology acquisitions of 2021 so far, in reverse chronological order.</p>
+                    <a href="#"
+                        class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                        Read more
+                        <svg aria-hidden="true" class="w-4 h-4 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                                clip-rule="evenodd"></path>
+                        </svg>
+                    </a>
+                </div>
+            </div> -->
           
+
+
+
+
 
         </section>
         <!-- ** Card by display country HTML5 Structure End -->
@@ -93,6 +121,7 @@
 
 
     <!--? FlowBite and External Js Link <Start>  -->
+    <script src="/js/catagori.js"></script>
     <script src="/js/api-intrigate.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.3/flowbite.min.js"></script>
     <!--? FlowBite and External Js Link <End>  -->
