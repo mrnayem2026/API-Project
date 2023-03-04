@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Universe Hub</title>
+  <!--! <><><> Tailwind CSS and DasiyUI Tailwind Kit Link [Start] <><><> -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@2.51.3/dist/full.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!--! <><><> Tailwind CSS and DasiyUI Tailwind Kit Link [End] <><><> -->
+</head>
+
+<body>
+
+  <!-- Header HTML5 Structure Start  -->
+  <header class="container mx-auto text-center py-8">
+    <h1 class="text-4xl font-bold pb-6">AI Universe Hub</h1>
+    <button onclick="" class="btn btn-secondary" >Sort By Date</button>
+  </header>
+  <!-- Header HTML5 Structure End  -->
+  
+  <!--? Main HTML5 Structure Start  -->
+  <main class="container mx-auto" >
+    <!-- Card container Start  -->
+    <section id="aiCardContainer" class="py-5 grid grid-cols-1 sm:grid-cols-2 sm:gap-2 md:grid-cols-3 ">
+
+    </section>
+    <!-- Card container End -->
+
+     
+    <!-- Modal Start  -->
+      <!-- The button to open modal -->
+      <input type="checkbox" id="my-modal-3" class="modal-toggle" />
+      <div class="modal ">
+        <div class="modal-box relative w-12/12  lg:w-11/12 lg:max-w-7xl">
+          <label for="my-modal-3" class="btn btn-sm btn-circle absolute right-2 top-2">✕</label>
+    
+          <section class="flex flex-col lg:flex-row justify-evenly">
+            <!-- left side card Start  -->
+    
+            <div class="">
+              <div class="card w-12/12 lg:w-8/12 bg-red-50 shadow-xl">
+                <div class="card-body">
+                <h2 class="text-lg lg:text-2xl font-bold" id="aiDescription">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus, corporis maxime doloremque veritatis et sint sit atque non nobis recusandae accusantium eius, consequuntur inventore facere officiis harum dicta error fugit?</h2>
+                  <div class="flex flex-col lg:flex-row gap-1 ">
+                    <div class="p-4 rounded-lg bg-amber-50 text-lg font-bold">
+                      <h1 class="text-gray-500" id="price1">$456/month
+                       </h1> <span id="plan1">Basic</span>
+                    </div>
+                    <div class="p-4 rounded-lg bg-amber-50 text-lg font-bold">
+                      <h1 class="text-green-600" id="price2">$10/month
+                       </h1> <span id="plan2">Basic</span>
+                    </div>
+                    <div class="p-4 rounded-lg bg-amber-50 text-lg font-bold">
+                      <h1 class="text-red-800" id="price3">$10/month
+                        </h1><span id="plan3">Basic</span>
+                    </div>
+                  </div>
+                  
+                  <div class="flex flex-col lg:flex-row justify-between">
+                    <!-- Features section Start  -->
+                    <div>
+                      <h1 class="text-2xl font-bold pb-2">Features</h1>
+                      <ul class="list-disc" id="Features">
+                      <!-- <li id="list1">Customizable responses</li>
+                      <li id="list2">Multilingual support</li>
+                      <li id="list3">Seamless integration</li> -->
+                      </ul>
+                    </div>
+                    <!-- Features section End  -->
+                    <!-- Integrations section Start  -->
+                    <div>
+                      <h1 class="text-2xl font-bold pb-2">Integrations</h1>
+                      <ul class="list-disc" id="Integrations">
+                        <!-- <li id="list4">Customizable responses</li>
+                        <li id="list5">Multilingual support</li>
+                        <li id="list6">Seamless integration</li> -->
+                      </ul>
+                    </div>
+                    <!-- Integrations section End  -->
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- left side card End  -->
+            <!-- Right side card Start -->
+            <div class="mt-5 lg:mt-0">
+              <div class="card  w-80  lg:w-96 bg-base-100 shadow-xl">
+                <figure><img src="/img.png" id="cardLogo" alt="Shoes" class="relative" />
+                <h1 id="accuracyScoreContainer" class="absolute top-2 right-2 p-2 rounded-lg text-white font-light bg-red-500"> <span id="accuracyScore"></span>% accuracy</h1>
+                </figure>
+                <div class="card-body">
+                  <h2 class="text-2xl  font-bold" id="cardInput">Hi, how are you doing today?</h2>
+                  <p class="text-lg font-extralight" id="cardOutpur">I'm doing well, thank you for asking. How can I assist you today?</p>             
+                </div>
+              </div>
+            </div>
+            <!-- Right side card End  -->
+          </section>
+        </div>
+      </div>
+      <!-- Modal End  -->
+
+
+    <!-- Loader or Spiner start  -->
+    <div id="lodder" class="hidden">
+      <img src="./icon/spiner.gif" alt="" class=" mx-auto">
+    </div>
+    <!-- Loader or Spiner end  -->
+
+    <!-- Show All Date Button Start  -->
+    <section id="showAllDateContainer" class="text-center hidden">
+      <button id="showAllDateBtn" type="button"
+        class="text-gray-900 bg-gradient-to-r from-red-200 via-red-300 to-yellow-200 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-red-100 dark:focus:ring-red-400 font-extrabold rounded-lg text-2xl  px-5 py-2.5 text-center mr-2 mb-2">Show
+        all date</button>
+    </section>
+    <!-- Show All Date Button End  -->
+  </main>
+  <!--? Main HTML5 Structure End  -->
+
+  <!-- ** Footer HTML5 Structure Start  -->
+  <footer></footer>
+  <!-- ** Footer HTML5 Structure End  -->
+
+  <!-- ? External JavaScript  Lnik Start  -->
+  <script src="./js/main.js"></script>
+  <script src="./js/xd.js"></script>
+  <!-- ? External JavaScript  Lnik End  -->
+</body>
+
+</html>
